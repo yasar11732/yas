@@ -10,16 +10,21 @@ Usage: DO NOT ACTUALLY USE THIS. IT MAY BE BROKEN IN WAYS YOU CANT EVEN IMAGINE
 
 If you want to give it a try; (Assuming yas.Yas is in your classpath)
 
-java yas.Yas init -> initialize empty yas repository
-java yas.Yas commit "commit message"
+java yas.Yas init
+initialize empty yas repository
 
+java yas.Yas commit "commit message"
 takes a snapshot of current working directory.
 There is no staging or tracking everything will be added.
                                         
-java yas.Yas log -> prints a log of commits
+java yas.Yas log
+prints a log of commits
 
-java yas.Yas reset -> reset everything to their state in last commit
-java yas.Yas reset sha1ofthecommithere -> go back to specified commit
+java yas.Yas reset
+reset everything to their state in last commit
+
+java yas.Yas reset sha1ofthecommithere
+go back to specified commit
 
 a note about resetting: resetting works by overwriting previous version of files
 into current versions. If there were no previous versions of a file, it will not be
